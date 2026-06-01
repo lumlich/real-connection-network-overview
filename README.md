@@ -268,5 +268,5 @@ The project connects my background in project and portfolio management with hand
 Lumír Lichý  
 GitHub: https://github.com/lumlich  
 LinkedIn: https://www.linkedin.com/in/lumir-lichy-166342a  
-crunchbase.com/organization/real-connection-network  
+Crunchbase: https://crunchbase.com/organization/real-connection-network  
 Website: https://www.realconnectionnetwork.com
