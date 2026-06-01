@@ -1,52 +1,90 @@
 # Real Connection Network
 
-**Real Connection Network (RCN)** is a digital product focused on local communities, real-world events and healthier online interaction.
+**Real Connection Network (RCN)** is a digital platform for local communities, real-world events and healthier online interaction.
 
-The purpose of RCN is simple:
-
-> Help people find others nearby, build communities around real interests and turn online coordination into real-life meetings.
+RCN helps people find others nearby, build communities around real interests and turn online coordination into real-life meetings.
 
 Website: https://www.realconnectionnetwork.com  
 Crunchbase: https://crunchbase.com/organization/real-connection-network  
-Creator / product lead: [Lumír Lichý](https://www.linkedin.com/in/lumir-lichy-166342a)
+Creator / end-to-end product lead: [Lumír Lichý](https://www.linkedin.com/in/lumir-lichy-166342a)
 
-This repository is a **public product and architecture overview** of Real Connection Network.
+This repository is a public product and architecture overview of Real Connection Network.
 
-The production source code is intentionally kept private for security, privacy and product-protection reasons.
+The production source code and infrastructure configuration are kept private for security, privacy and product-protection reasons.
 
 ---
 
-## Product idea
+## Vision
 
-Most social platforms are optimized for attention, visibility and constant engagement.
+Many social platforms are built around attention, engagement and endless feeds.
 
-Real Connection Network is designed around a different idea:
+Real Connection Network is built around a different idea:
 
-- fewer empty online interactions,
-- more local relevance,
-- more real-world meetings,
+> Online tools should help people meet, build trust and do things together in real life.
+
+RCN is designed for people who want fewer passive online interactions and more meaningful local community life.
+
+The product focuses on:
+
+- local communities,
+- real-world events,
 - calmer communication,
-- stronger local communities,
-- healthier online habits.
-
-RCN is not meant to be another endless feed. It is meant to help people discover local communities, organize real-world activities and build trust over time.
+- healthier online habits,
+- privacy-conscious location features,
+- practical tools for people who want to meet and organize in real life.
 
 ---
 
-## What RCN is built for
+## Product concept
 
-RCN helps users:
+RCN connects online coordination with offline action.
+
+Instead of being another place for endless scrolling, RCN is designed as a practical layer for discovering communities, joining local groups, organizing events and building trust over time.
+
+Users can:
 
 - discover local communities,
-- join groups based on real interests,
-- create and participate in community events,
+- create and join interest-based groups,
 - share posts and updates inside communities,
-- coordinate real-life meetings,
+- organize and attend real-world events,
+- coordinate local activities,
 - receive relevant notifications,
 - interact in a calmer and more focused environment,
 - build meaningful relationships with people nearby.
 
-The product is especially focused on the bridge between **online coordination** and **offline community life**.
+The central idea is simple: online interaction should lead somewhere.
+
+---
+
+## End-to-end ownership
+
+Real Connection Network has been designed and built end-to-end by **Lumír Lichý**.
+
+This includes:
+
+- product vision,
+- product positioning,
+- feature definition,
+- roadmap planning,
+- UX logic,
+- product copy,
+- backend architecture,
+- frontend behavior,
+- database design,
+- API structure,
+- authentication flows,
+- event logic,
+- community logic,
+- location and map concepts,
+- security hardening,
+- privacy decisions,
+- media and image-handling planning,
+- notification flows,
+- deployment planning,
+- public presentation,
+- testing and continuous improvement.
+
+RCN combines product design, software architecture, community thinking, privacy awareness and technical implementation into one coherent product.
 
 ---
 
@@ -54,126 +92,139 @@ The product is especially focused on the bridge between **online coordination** 
 
 ### Local communities
 
-Users can discover and join communities connected to interests, topics, activities and local areas.
+RCN allows users to discover and join communities connected to interests, topics, activities and local areas.
 
-Communities are intended to support real-world activity, not just online discussion.
+Communities are not designed only for online discussion. They are meant to support real-world relationships, meetings and shared activities.
 
 ### Community posts
 
-Communities can publish posts, updates and discussions in a more focused environment than traditional social feeds.
+Communities can publish posts, updates and discussions in a focused environment.
 
-The goal is to support useful communication without unnecessary noise.
+The communication model is intentionally calmer than traditional social feeds. The goal is to support useful community communication without unnecessary noise.
 
 ### Real-world events
 
-Communities can organize events connected to real places, dates and activities.
+Events are one of the core parts of RCN.
 
-Events are an important part of the product because they move the platform from passive online interaction toward real participation.
+Communities can organize events connected to real places, dates and activities. This moves the product from online communication toward real participation.
+
+Events are designed as practical tools for local groups, not just as abstract calendar entries.
 
 ### Attendance and check-in
 
-RCN includes an event attendance flow designed around actual participation.
+RCN includes an attendance model focused on real participation.
 
-The organizer has control over attendance confirmation, including PIN-based check-in logic for real-world events.
+The event flow includes:
 
-This avoids treating every online RSVP as real participation.
+- organizer role,
+- participant RSVP,
+- event timing,
+- attendance visibility,
+- PIN-based check-in,
+- organizer-controlled attendance confirmation,
+- post-event archive logic,
+- attendance summary.
 
-### Location-aware discovery
+The goal is to distinguish between online interest and actual real-world participation.
 
-RCN uses location-related logic to help people find nearby communities and events.
+### Local discovery
 
-The product avoids requiring exact public addresses where they are not necessary. The goal is local relevance without unnecessary exposure of precise personal location.
+RCN uses location-aware logic to help people find relevant communities and events nearby.
+
+The product focuses on practical local relevance without requiring unnecessary exposure of precise personal location.
 
 ### Hex-based map areas
 
-One of the product ideas is to use map-based area logic instead of relying only on exact points or administrative borders.
+One of the distinctive product concepts in RCN is the use of map-based area logic instead of relying only on exact points or administrative borders.
 
-Hex-style geographic areas can help represent approximate community coverage, local relevance and nearby discovery in a way that is more privacy-conscious and visually understandable.
+Hex-style geographic areas can represent approximate local zones in a clean and understandable way.
 
-This approach is useful because communities are often not defined by exact addresses. They are usually connected to neighborhoods, walking distance, local regions or practical meeting areas.
+This is useful because communities are often not defined by exact addresses. They are connected to neighborhoods, walking distance, local regions, meeting areas or practical everyday geography.
+
+The hex-based concept supports:
+
+- approximate community coverage,
+- local discovery,
+- privacy-conscious location handling,
+- clearer map visualization,
+- flexible community areas,
+- reduced dependence on exact user addresses.
 
 ### Notifications
 
-RCN includes notification flows for important community and event updates.
+RCN includes notification flows for relevant community and event updates.
 
-The notification concept is designed to support real participation without creating unnecessary distraction.
+The notification concept is designed to support participation and coordination without creating unnecessary distraction.
 
 ### Media and photos
 
-The product is being developed with support for image uploads connected to posts, communities and public presentation.
+RCN is being developed with media support for posts, communities and public presentation.
 
-Media handling requires practical limits, compression, retention rules and storage-efficient design.
+The media concept includes:
 
-### Safety, moderation and privacy
+- image upload support,
+- compression planning,
+- storage-efficient handling,
+- practical limits,
+- deletion and retention rules,
+- privacy-conscious media management.
 
-RCN is designed with attention to account safety, community trust, location privacy, access control and careful handling of user data.
+### Safety and moderation
 
-Because the product works with real people, real communities and real places, safety and privacy are part of the product design rather than an afterthought.
+RCN includes product and architecture decisions around community trust, access control, moderation and user safety.
+
+Because the platform connects real people, real communities and real places, safety is part of the product design itself.
 
 ---
 
 ## Product principles
 
-Real Connection Network is built around these principles:
-
 ### Real-world connection first
 
-Online tools should help people meet, build trust and do things together in real life.
+RCN is built to help people meet, organize and build trust in real life.
+
+Online interaction is treated as a tool, not as the final goal.
 
 ### Local relevance
 
-Communities and events should be connected to real places and nearby people.
+Communities and events should be connected to real places, nearby people and practical local life.
 
 ### Calmer online environment
 
-The product should avoid unnecessary noise, addictive interaction patterns and algorithmic pressure.
+RCN is intentionally designed against doomscrolling, constant engagement loops and unnecessary algorithmic pressure.
+
+The product favors clarity, purpose and real-world usefulness.
+
+### Privacy-conscious design
+
+Location and identity features are handled carefully.
+
+The product avoids unnecessary precision where approximate local context is enough.
 
 ### Practical community tools
 
-The platform should focus on useful features: communities, posts, events, attendance, notifications, media and moderation.
+RCN focuses on features that help communities actually function:
 
-### Privacy-conscious location design
+- posts,
+- events,
+- attendance,
+- check-in,
+- notifications,
+- media,
+- ownership and moderation,
+- location-aware discovery.
 
-Location should support discovery and relevance without exposing more personal information than needed.
+### Trust over virality
 
-### Trust and safety
+RCN is not optimized for viral reach.
 
-Community tools need clear permissions, access rules, moderation concepts and secure account flows.
-
----
-
-## My role in the project
-
-Real Connection Network is my own product.
-
-My work on the project includes:
-
-- product vision and positioning,
-- feature planning and prioritization,
-- community and event flow design,
-- product copy and public communication,
-- UX logic and user-flow decisions,
-- backend architecture coordination,
-- frontend behavior coordination,
-- database and data-model decisions,
-- API structure and endpoint planning,
-- authentication and account-flow improvements,
-- event attendance and PIN check-in logic,
-- location and map-related product decisions,
-- media and image-handling planning,
-- notification-flow planning,
-- privacy and security hardening,
-- deployment and production-readiness planning,
-- testing and quality control,
-- documentation and public presentation.
-
-The project combines product management, software delivery, architecture thinking, security awareness and hands-on technical work.
+It is designed for trust, continuity and meaningful local interaction.
 
 ---
 
 ## Technology overview
 
-The production implementation is private, but RCN is built as a modern web application with backend, frontend, database, media and deployment layers.
+RCN is built as a modern web application with backend, frontend, database, media and deployment layers.
 
 High-level technology areas include:
 
@@ -195,46 +246,49 @@ High-level technology areas include:
 - automated testing,
 - iterative development workflow.
 
-The product is not only a static website. It is a full application with user accounts, communities, events, permissions, notifications, media considerations and production deployment architecture.
+The system is designed around real application concerns: accounts, sessions, communities, events, permissions, notifications, media, privacy and deployment.
 
 ---
 
-## Architecture focus
+## Architecture
 
-RCN is developed with attention to:
+The architecture focuses on clear separation of responsibilities between backend, frontend, database and deployment layers.
 
-- clear separation between frontend and backend responsibilities,
+Key architectural areas include:
+
 - structured API endpoints,
 - database-backed community and event logic,
 - organizer and participant roles,
 - access control for community and event actions,
-- secure handling of authentication flows,
+- secure authentication flows,
 - careful handling of location-related data,
 - maintainable event lifecycle rules,
 - scalable media handling,
 - production deployment readiness,
-- incremental improvement without unnecessary rewrites.
+- incremental improvements without unnecessary rewrites.
+
+The architecture is shaped by the product itself: local communities, real-world events, trust, safety, privacy and long-term maintainability.
 
 ---
 
 ## Event model
 
-Events are one of the most important product areas in RCN.
+The event model is designed for real-world participation.
 
-The event model includes concepts such as:
+Important event concepts include:
 
 - community-based event creation,
 - organizer role,
 - participant RSVP,
 - time-based event state,
-- attendance visibility,
+- organizer PIN visibility,
 - PIN-based check-in,
-- organizer-controlled confirmation,
-- post-event archive logic,
+- attendance confirmation,
 - attendance summary,
-- protection against unrealistic or late participation changes.
+- post-event archiving,
+- protection against unrealistic late changes.
 
-The goal is to make events useful for real-world communities, not just online declarations of interest.
+This makes events useful for real communities where attendance and participation matter.
 
 ---
 
@@ -249,11 +303,12 @@ Important community concepts include:
 - community events,
 - local discovery,
 - public presentation,
-- moderation and ownership logic,
+- community ownership,
+- moderation logic,
 - location or area context,
 - long-term community identity.
 
-The community model is meant to support groups that already exist as well as people who want to create new local communities from scratch.
+The community model supports both existing groups and people who want to build a local community from scratch.
 
 ---
 
@@ -261,9 +316,9 @@ The community model is meant to support groups that already exist as well as peo
 
 Location is important for RCN, but exact location is sensitive.
 
-The product therefore focuses on practical local relevance rather than unnecessary precision.
+The product therefore focuses on useful local relevance rather than unnecessary precision.
 
-Location-related ideas include:
+Location-related concepts include:
 
 - approximate home-place logic,
 - nearby community discovery,
@@ -273,18 +328,17 @@ Location-related ideas include:
 - using geographic areas where exact points are not needed,
 - making local discovery understandable to users.
 
-The hex-based area concept is part of this thinking: it can help represent local zones in a clean, consistent and privacy-conscious way.
+The hex-based area concept is part of this approach. It can represent local zones in a consistent, readable and privacy-conscious way.
 
 ---
 
-## Security and privacy approach
+## Privacy and security
 
-Because RCN works with users, communities, events and location-related information, security and privacy are central to the product.
+RCN works with users, communities, events and location-related information, so privacy and security are central to the product.
 
 Important principles include:
 
 - keeping production source code private,
-- avoiding public exposure of sensitive implementation details,
 - minimizing personal data where possible,
 - careful handling of user location information,
 - secure authentication and password-reset flows,
@@ -293,42 +347,52 @@ Important principles include:
 - controlled media handling,
 - production logging without unnecessary personal data,
 - retention and deletion planning,
-- gradual hardening before broader public rollout.
+- security hardening before broader rollout.
+
+Privacy is not treated as a legal checkbox. It is part of the product logic.
 
 ---
 
-## Why the source code is private
+## Anti-doomscrolling approach
 
-This repository does not contain the production source code.
+RCN is designed as a calmer alternative to attention-driven social platforms.
 
-The source code is private because the product includes:
+The product direction avoids:
 
-- authentication logic,
-- user data handling,
-- community and event permissions,
-- location-related logic,
-- deployment configuration,
-- infrastructure details,
-- security-sensitive workflows,
-- product-specific implementation decisions.
+- endless engagement loops,
+- unnecessary algorithmic pressure,
+- noise-driven interaction,
+- empty visibility metrics,
+- interaction patterns that keep users online without helping them act.
 
-This public repository provides a high-level overview of the product, architecture, technology choices and development direction without exposing sensitive implementation details.
+The product favors:
+
+- real-world action,
+- local relevance,
+- focused communication,
+- community continuity,
+- meaningful participation,
+- practical event organization.
+
+The goal is not to maximize screen time. The goal is to make online coordination useful enough that people can meet offline.
 
 ---
 
-## Current development focus
+## Development focus
 
 Current development focus includes:
 
-- improving onboarding and public presentation,
-- refining community discovery,
+- improving onboarding,
+- refining public presentation,
+- strengthening community discovery,
 - improving event flows,
-- strengthening safety and privacy,
 - preparing image and media handling,
+- improving notification flows,
+- strengthening privacy and safety,
 - improving deployment and production readiness,
 - improving documentation,
-- building a stronger public digital footprint for the project,
-- preparing the product for broader real-user testing.
+- expanding the public digital footprint of the project,
+- preparing the product for broader user testing.
 
 ---
 
@@ -350,28 +414,15 @@ LinkedIn:
 
 https://www.linkedin.com/in/lumir-lichy-166342a
 
-This public overview helps connect the technical, product and public identity of Real Connection Network across the web.
+This public overview connects the product, technical direction and public identity of Real Connection Network across the web.
 
 ---
 
-## Professional context
+## Repository note
 
-Real Connection Network connects my long-term background in project, portfolio and operations management with hands-on digital product development.
+This repository contains a public product and architecture overview.
 
-The project involves:
-
-- product thinking,
-- prioritization,
-- technical coordination,
-- software architecture decisions,
-- backend and frontend delivery,
-- security and privacy work,
-- deployment planning,
-- public communication,
-- iterative improvement,
-- long-term product ownership.
-
-It is a real product built to become useful, not a coding exercise.
+It does not contain production source code, deployment secrets, infrastructure configuration or security-sensitive implementation details.
 
 ---
 
