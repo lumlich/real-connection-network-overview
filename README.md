@@ -48,6 +48,7 @@ Users can:
 - share posts and updates inside communities,
 - organize and attend real-world events,
 - coordinate local activities,
+- build community reputation through confirmed participation and helpful contributions,
 - receive relevant notifications,
 - interact in a calmer and more focused environment,
 - build meaningful relationships with people nearby.
@@ -126,6 +127,25 @@ The event flow includes:
 - attendance summary.
 
 The goal is to distinguish between online interest and actual real-world participation.
+
+### Reputation and helpful contributions
+
+RCN replaces shallow engagement signals with reputation based on useful contribution and real participation.
+
+Instead of optimizing for likes, virality or empty visibility metrics, the product is designed around signals that make communities function better:
+
+- helping other members,
+- sharing useful community information,
+- contributing to constructive discussion,
+- organizing or supporting real-world events,
+- confirming real attendance through PIN-based check-in,
+- building trust through repeated positive participation.
+
+This turns reputation into a practical community signal, not a popularity contest.
+
+The PIN-based event flow is therefore not only a safety or attendance feature. It is part of the trust layer: it helps distinguish real participation from passive interest and gives the product a healthier form of gamification.
+
+The goal is to motivate people to contribute, show up and help their communities become more active in the real world.
 
 ### Local discovery
 
@@ -220,6 +240,14 @@ RCN is not optimized for viral reach.
 
 It is designed for trust, continuity and meaningful local interaction.
 
+### Contribution over likes
+
+RCN treats contribution as more important than reaction.
+
+A like is easy, fast and often passive. A helpful action, a useful post, a confirmed event attendance or support for a local community carries more meaning.
+
+This is why RCN's incentive model is oriented toward helpfulness, reputation and real-world participation rather than popularity metrics.
+
 ---
 
 ## Technology overview
@@ -236,6 +264,7 @@ High-level technology areas include:
 - community and event data models,
 - role-based access logic,
 - event attendance and check-in logic,
+- reputation and helpfulness signals,
 - location-aware discovery,
 - map and area selection logic,
 - media upload planning,
